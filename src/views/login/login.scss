@@ -1,0 +1,13 @@
+.login {
+    position: relative;
+    height: 100%;
+
+    .card {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        max-width: 500px;
+        min-width: 412px;
+        transform: translate(-50%, -50%);
+    }
+}

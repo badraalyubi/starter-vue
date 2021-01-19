@@ -1,0 +1,50 @@
+<section class="login">
+  <b-card
+    img-src="https://picsum.photos/900/250/?image=3"
+    img-alt="Card Image"
+    text-variant="black"
+    class="card"
+  >
+    <div class="text-center">
+      <b-card-title>Login</b-card-title>
+      <b-card-sub-title>Please login first</b-card-sub-title>
+    </div>
+  
+    <div>
+      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <b-form-group
+          id="input-group-1"
+          label="Username:"
+          label-for="input-1"
+          description="We'll never share your username with anyone else."
+        >
+          <b-form-input
+            id="input-1"
+            v-model="form.username"
+            type="text"
+            required
+            placeholder="Enter username"
+          ></b-form-input>
+        </b-form-group>
+
+        <b-form-group
+          id="input-group-2"
+          label="Password:"
+          label-for="input-1"
+          description="We'll never share your email with anyone else."
+        >
+          <b-form-input
+            id="input-2"
+            v-model="form.password"
+            type="password"
+            required
+            placeholder="Enter Password"
+          ></b-form-input>
+        </b-form-group>
+
+        <b-button block type="submit" variant="primary">Login</b-button>
+      </b-form>
+    </div>
+  </b-card>
+</section>
+
